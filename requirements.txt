@@ -1,0 +1,39 @@
+# ═══════════════════════════════════════════════════════════════
+#  PitchGuard AI — Python Dependencies
+#  Tested on Python 3.10 / 3.11 (Streamlit Cloud default)
+# ═══════════════════════════════════════════════════════════════
+
+# ── Core Streamlit ──────────────────────────────────────────────
+streamlit==1.35.0
+
+# ── Computer Vision & Pose Estimation ──────────────────────────
+# opencv-python-headless: no GUI deps — required for Streamlit Cloud
+opencv-python-headless==4.9.0.80
+# FIX: bumped from 0.10.14 → 0.10.18 for better pip/platform compatibility
+mediapipe==0.10.18
+
+# ── Numerical & Data ────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.2
+
+# ── Machine Learning ────────────────────────────────────────────
+# FIX: xgboost 2.0+ removed use_label_encoder param — fixed in ml_models.py
+# and train_models.py via _make_xgb_classifier() helper.
+xgboost==2.0.3
+scikit-learn==1.4.2
+joblib==1.4.2
+
+# ── Visualisation ───────────────────────────────────────────────
+plotly==5.22.0
+
+# ── Google Gemini (google-genai, NOT google-generativeai) ───────
+google-genai==0.8.0
+
+# ── Image handling ──────────────────────────────────────────────
+Pillow==10.3.0
+
+# ── Utilities ───────────────────────────────────────────────────
+# protobuf pinned: mediapipe 0.10.x requires >= 3.20, < 5
+protobuf==4.25.3
+attrs==23.2.0
+absl-py==2.1.0

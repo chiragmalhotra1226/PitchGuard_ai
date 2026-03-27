@@ -1,0 +1,20 @@
+# ═══════════════════════════════════════════════════════════════
+#  PitchGuard AI — System Packages (packages.txt)
+#  Installed via apt-get on Streamlit Cloud (Ubuntu 22.04 LTS)
+#  Required by OpenCV headless + MediaPipe native libs
+# ═══════════════════════════════════════════════════════════════
+
+# ── OpenCV headless runtime dependencies ─────────────────────────
+libgl1
+libglib2.0-0
+libsm6
+libxrender1
+libxext6
+
+# ── MediaPipe native library dependencies ────────────────────────
+libgomp1
+
+# ── Video codec support (for cv2.VideoCapture on MP4/MOV/AVI) ───
+libavcodec-dev
+libavformat-dev
+libswscale-dev
