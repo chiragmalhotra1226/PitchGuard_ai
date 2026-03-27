@@ -235,7 +235,7 @@ def extract_landmarks_from_image(
 
     with _mp_pose.Pose(
         static_image_mode=True,
-        model_complexity=2,
+        model_complexity=1,
         enable_segmentation=False,
         min_detection_confidence=confidence,
     ) as pose:
