@@ -5,7 +5,7 @@ libsm6
 libxrender1
 libxext6
 
-ibgomp1
+libgomp1
 
 libavcodec-dev
 libavformat-dev
